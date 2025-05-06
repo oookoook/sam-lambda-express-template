@@ -1,11 +1,10 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: "ICal TZ Fix API"
+Description: "SAM Lambda Express API"
 Resources:
   ApiGateway:
     Type: AWS::Serverless::HttpApi
     Properties:
-      # StageName: latest
       CorsConfiguration:
         AllowOrigins:
           - "*"  
